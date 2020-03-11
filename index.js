@@ -46,9 +46,9 @@ function myFunction(user, sort_by, sortDirection) {
     sort_by = sort_by || 0;
     user = user || 0;
     var resultArr = [];
-    if(user !== 0)console.log("Sort by:", user);
+    
     if (user) {
-        
+        console.log("Sort by:", user);
         newArr.forEach(function(item) {
             var arr = [];
 
@@ -64,7 +64,7 @@ function myFunction(user, sort_by, sortDirection) {
     }
     if (user && sort_by == "balance" && sortDirection == "asc") {
         var sortByUser = [];
-        console.log("Sort by user and balance ascending order");
+        console.log("Sort by", user, "and balance ascending order");
         newArr.forEach(function(item) {
             var arr = [];
             if (item.user == user) {
@@ -77,7 +77,7 @@ function myFunction(user, sort_by, sortDirection) {
 
     if (user && sort_by == "balance" && sortDirection == "desc") {
         var sortByUser = [];
-        console.log("Sort by user and balance descending order");
+        console.log("Sort by", user, "and balance descending order");
         newArr.forEach(function(item) {
             var arr = [];
             if (item.user == user) {
