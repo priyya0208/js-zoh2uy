@@ -91,6 +91,8 @@ function myFunction(user, sort_by, sortDirection) {
 
 
     console.log(JSON.stringify(resultArr));
+
+    
 }
 
 
