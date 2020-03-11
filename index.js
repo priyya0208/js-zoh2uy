@@ -46,7 +46,7 @@ function myFunction(user, sort_by, sortDirection) {
     sort_by = sort_by || 0;
     user = user || 0;
     var resultArr = [];
-    console.log("Sort by:", user);
+    if(user !== 0)console.log("Sort by:", user);
     if (user) {
         
         newArr.forEach(function(item) {
